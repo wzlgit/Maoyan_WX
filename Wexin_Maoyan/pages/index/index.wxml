@@ -1,0 +1,28 @@
+<view class='page-header'>
+  <text class='page-header-text'>{{title}}</text>
+</view>
+
+<scroll-view class='page-body' scroll-y='true'>
+  <navigator wx:key="id" url='../movie/movie?id={{item.id}}' wx:for='{{movies}}' wx:for-item="item">
+    <view class='item'>
+      <image class='poster' mode='scaleToFill' src='{{item.img}}'></image>
+      <view class='meta'>
+        <view class="title_view">
+          <text class='title'>{{item.nm}}</text>  
+          <view class='threeD_imax' wx:if='{{item.imax}}'>
+            <text class='text' wx:if='{{item["3d"]}}'>3D</text> 
+            <text class='text' wx:elif='{{item["3d"]}} == false'>2D</text> 
+            <text class='text'> Max</text> 
+          </view>
+        </view>
+         
+         <text class='sub-title'>{{item.cat}}</text> 
+         <text class='artists'>{{item.star}}</text> 
+      </view>
+      <view class='rating'>
+        <text wx:if='{{item.preSale !== 1}}'>{{item.sc}}<text style='font-size:12px'>分</text></text>
+						<text wx:else>{{item.wish}}<text style='font-size:12px'>想看</text></text>
+      </view>
+    </view>
+  </navigator>
+</scroll-view>

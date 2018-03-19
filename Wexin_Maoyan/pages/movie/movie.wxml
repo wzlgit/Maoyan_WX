@@ -1,0 +1,16 @@
+<!--pages/movie/movie.wxml-->
+<scroll-view scroll-y="true">
+  <view class="meta">
+    <view class="posterView">
+      <image class="poster" src="{{movieDetail.img}}" mode="aspectFit" />
+    </view>
+    <text class="title">{{movieDetail.mn}}</text>
+    <text class="info">评分：{{movieDetail.sc}}分</text>
+    <text class="info">导演：{{movieDetail.dir}} </text>
+    <text class="info">主演：{{movieDetail.star}} </text>
+  </view>
+  <view class="summary">
+    <text class="label">简介：</text>
+    <text class="content">{{movieDetail.dra}}</text>
+  </view>
+</scroll-view>

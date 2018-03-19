@@ -1,0 +1,85 @@
+/**app.wxss**/
+page {
+  font-family: "Microsoft YaHei";
+  background-color: "red";
+  display: flex;
+  flex-direction: column;
+}
+
+.page-header{
+  display: flex;
+  justify-content: center;
+  border-bottom: 1rpx solid lightgray;
+  margin-bottom: 10rpx;
+}
+
+.page-header-text{
+  padding: 20rpx 40rpx;
+  color: #999;
+  font-size: 40rpx; 
+}
+
+.page-body {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+}
+
+.item {
+  display: flex;
+  padding: 20rpx 40rpx;
+  border-bottom: 2rpx solid #eee;
+}
+
+.item .poster {
+  height: 180rpx;
+  width: 128rpx;
+  margin-right: 20rpx;
+} 
+
+.item .meta {
+  flex: 1;
+}
+
+.item .title_view {
+  display: flex;
+  margin-bottom: 14rpx;
+  flex-direction: row;
+}
+
+.item .title_view .threeD_imax {  
+  border:1px solid #999;
+  font-size: 24rpx;
+  margin-left: 6rpx;
+  margin-top: 3rpx;
+  margin-bottom: 3rpx;
+  padding-left: 5rpx;
+  padding-right: 5rpx;
+  background-color: #6699ff;
+}
+
+.item .title_view .title {  
+  font-size: 28rpx;
+}
+
+.item .title_view .threeD_imax .text {  
+  color: white;
+}
+
+.item .sub-title {
+  font-size: 22rpx;
+  color: #c0c0c0;
+  display: block;
+  margin-bottom: 14rpx;
+}
+
+.item .artists {
+  font-size: 24rpx;
+  color: #999;
+}
+
+.item .rating {
+  font-size: 28rpx;
+  font-weight: bold;
+  color: red;
+}
